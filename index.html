@@ -1,24 +1,182 @@
 <html>
-  <head>
-<!-- REDIRECTING STARTS -->
-<link rel="canonical" href="https://library.yeahgames.net"/>
-<noscript>
-    <meta http-equiv="refresh" content="0;URL=https://library.yeahgames.net">
-</noscript>
-<!--[if lt IE 9]><script type="text/javascript">var IE_fix=true;</script><![endif]-->
-<script type="text/javascript">
-    var url = "https://library.yeahgames.net";
-    if(typeof IE_fix != "undefined") // IE8 and lower fix to pass the http referer
-    {
-        document.write("redirecting..."); // Don't remove this line or appendChild() will fail because it is called before document.onload to make the redirect as fast as possible. Nobody will see this text, it is only a tech fix.
-        var referLink = document.createElement("a");
-        referLink.href = url;
-        document.body.appendChild(referLink);
-        referLink.click();
+<head>
+  <meta name="google-site-verification" content="4zcIJTHN2ODvJZZARi0H8nqNDAgKPktLCuSGFcsXwIs" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>The yEAh Archives</title>
+  <link rel="shortcut icon" href="https://cdn.yeahgames.net/img/branding/logos/default/logo.png">
+  <link rel="favicon" href="https://cdn.yeahgames.net/img/branding/logos/default/logo.png">
+  <link rel="icon" href="https://cdn.yeahgames.net/img/branding/logos/default/logo.png">
+  <link rel="stylesheet" href="css/material.blue_grey-blue.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% include gtag.html %}
+
+  <style>
+    body {
+      background-color: #040615
     }
-    else { window.location.replace(url); } // All other browsers
-</script>
-  </head>
-    <body>
-      </body
-      </html>
+
+    .mdl-grid {
+      max-width: 95%;
+      min-height: 100%;
+    }
+
+    .mdl-cell {
+      padding: 1em;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .mdl-card__title {
+      border-bottom: 1px solid #aaa;
+      background-color: #1a2634;
+    }
+
+    .mdl-card__title-text {
+      color: white;
+      font-weight: 700;
+    }
+
+    .mdl-card__supporting-text {
+      height: 80px;
+      background-color: #1a2634;
+      color: white
+    }
+
+    .mdl-card__media {
+      background: #1a2634;
+      text-align: center;
+      height: 170px;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .mdl-card__media img {
+      width: 100%;
+      background-size: cover
+    }
+
+    .mdl-card:hover {
+      transform: scale(1.01, 1.01);
+      transition: transform .1s;
+      background-color: #1a2634;
+
+    }
+
+    .mdl-card__actions {
+      text-align: right;
+      background-color: #1a2634;
+
+    }
+
+    .mdl-card {
+      float: left;
+      margin: 2em 2em;
+      background-color: #1a2634;
+
+    }
+
+    .outer {
+      width: 100%;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+
+    }
+
+    .inner {
+      padding-top: 2em;
+      padding-bottom: 10em;
+      display: table;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="outer">
+    <div class="inner">
+
+      <a href="https://library.yeahgames.net/">
+        <div class="mdl-card mdl-shadow--4dp" id="opensource">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">The yEAh Library</h2>
+          </div>
+          <div class="mdl-card__media">
+            <img src="images/library.webp">
+          </div>
+          <div class="mdl-card__supporting-text">
+            The yEAh Library is the <b>easiest</b> way to access yEAh Archive files. Content from everywhere in the
+            archives is aggregated into one easy-to-read site so you can browse, search, and find what you're looking
+            for.
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">
+              <a href="https://library.yeahgames.net">library.yeahgames.net</a>
+            </button>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://archive.yeahgames.net">
+        <div class="mdl-card mdl-shadow--4dp" id="developers">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">The yEAh Archive</h2>
+          </div>
+          <div class="mdl-card__media">
+            <img src="images/archive.jpg">
+          </div>
+          <div class="mdl-card__supporting-text">
+            You can also access the yEAh Archives through our servers. They're hosted on yEAh Cloud, meaning you can
+            simply browse through Apache-style indexes of files in the archive. Recommended for advanced usage.
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">
+              <a href="https://archive.yeahgames.net/">archive.yeahgames.net</a>
+            </button>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://library-collections.yeahgames.net">
+        <div class="mdl-card mdl-shadow--4dp" id="projecthosting">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">Libary collections</h2>
+          </div>
+          <div class="mdl-card__media">
+            <img src="images/collections.jpg">
+          </div>
+          <div class="mdl-card__supporting-text">
+            Library collections are how the Archives organizes its files. Each collection has a specific purpose, and
+            organizes the related items. If you're looking for something specific (e.g., quotes), this is a good place
+            to start.
+          </div>
+          <div class="mdl-card__actions">
+            <button class="mdl-button">
+              <a href="https://library-collections.yeahgames.net">collections.yeahgames.net</a>
+            </button>
+          </div>
+        </div>
+      </a>
+      <center><img title="Copyright 2018-present: The yEAh Games Corporation, LLC. All rights reserved."
+          style="position:absolute;bottom:4em;right:47%" src="https://cdn.yeahgames.net/img/branding/logos/text/red.png"
+          width="100px"></center>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
